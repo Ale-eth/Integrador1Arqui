@@ -28,7 +28,7 @@ public class Main {
         System.out.println("////////////////////////////////////////////");
 
         // Factory 1: MySQL
-        AbstractFactory chosenFactory = AbstractFactory.getDAOFactory(1);
+        AbstractFactory chosenFactory = AbstractFactory.getDAOFactory();
         ClienteMysqlDAO clienteMysqlDAO = chosenFactory.getClienteMysqlDAO();
         FacturaProductoMysqlDAO facturaProductoMysqlDAO = chosenFactory.getFacturaProductoMysqlDAO();
 
